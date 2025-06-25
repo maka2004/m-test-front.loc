@@ -1,0 +1,17 @@
+<h2>Новости</h2>
+
+<input
+  #searchInput
+  type="text"
+  placeholder="Поиск по заголовку"
+  [value]="filter()"
+  (input)="onFilterChange(searchInput.value)"
+/>
+
+<div *ngIf="newsList().length === 0">Нет новостей</div>
+
+<ul>
+  <li *ngFor="let item of newsList()">
+    <app-news-item [news]="item"></app-news-item>
+  </li>
+</ul>

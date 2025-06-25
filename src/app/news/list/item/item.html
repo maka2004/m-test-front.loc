@@ -1,0 +1,7 @@
+<article class="news-card">
+  <h3>{{ news.title }}</h3>
+  <p><small>{{ news.created_at | date:'medium' }}</small></p>
+  <p>{{ news.content | slice:0:200 }}...</p>
+
+  <a [routerLink]="['/news', news.id]">Читать далее</a>
+</article>

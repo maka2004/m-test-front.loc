@@ -1,0 +1,9 @@
+<div *ngIf="isLoading()">Загрузка...</div>
+<div *ngIf="error()">{{ error() }}</div>
+
+<div *ngIf="news()">
+  <h2>{{ news().title }}</h2>
+  <p>{{ news().content }}</p>
+
+  <a [routerLink]="['/news', news().id, 'edit']">Редактировать</a>
+</div>
