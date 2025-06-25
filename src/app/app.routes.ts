@@ -3,7 +3,7 @@ import { NewsList } from './news/list/list';
 import { NewsView } from './news/view/view';
 import { NewsEdit } from './news/edit/edit';
 import { Home } from './pages/home/home';
-import { Login } from './auth/login/login'
+import { Login } from './login/login'
 import { authGuard } from './auth/auth.guard';
 
 export const routes: Routes = [
