@@ -28,6 +28,14 @@ header, footer {
             &:hover {
                 text-decoration: underline;
             }
+
+            &.log-out {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-family: inherit;
+                font-size: inherit;
+            }
         }
     }
 }

@@ -3,7 +3,7 @@
     <a routerLink="/" routerLinkActive="active" class="nav-link">Главная</a>
     <a routerLink="/news" routerLinkActive="active" class="nav-link">Новости</a>
     @if (auth.loggedIn()) {
-      <a (click)="logout()" class="nav-link right">Выйти</a>
+      <button (click)="logout()" class="nav-link right log-out">Выйти</button>
     } @else {
       <a routerLink="/login" routerLinkActive="active" class="nav-link right">Войти</a>
     }
