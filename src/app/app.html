@@ -1,11 +1,11 @@
 <header class="site-header">
   <nav class="nav">
-    <a href="/" routerLinkActive="active" class="nav-link">Главная</a>
-    <a href="/news" routerLinkActive="active" class="nav-link">Новости</a>
+    <a routerLink="/" routerLinkActive="active" class="nav-link">Главная</a>
+    <a routerLink="/news" routerLinkActive="active" class="nav-link">Новости</a>
     @if (auth.loggedIn()) {
-      <a href="#" (click)="auth.logout()" routerLinkActive="active" class="nav-link right">Выйти</a>
+      <a routerLink="#" (click)="auth.logout()" routerLinkActive="active" class="nav-link right">Выйти</a>
     } @else {
-      <a href="/login" routerLinkActive="active" class="nav-link right">Войти</a>
+      <a routerLink="/login" routerLinkActive="active" class="nav-link right">Войти</a>
     }
   </nav>
 </header>
